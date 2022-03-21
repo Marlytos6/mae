@@ -1,0 +1,124 @@
+@charset 'UTF-8';
+@font-face {
+    font-family: 'Elsie';
+    src: url(fonts/ElsieSwashCaps-Regular.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+:root {
+    --rosa1: #CA32DB;
+    --rosa2: #9532DB;
+    --cor_complementar: #EBCC22;
+    --cor1: #2E19DB;
+    --cor2: #18D2F0;
+    --font_padrao: Arial, Helvetica, sans-serif;
+    --fonte_tema: 'Elsie';
+    --fonte_destaque: 'Inspiration', cursive;
+    --marg_baixo: 0.5em
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: var(--fonte_tema);
+}
+
+h2 {
+    font-family: var(--fonte_destaque);
+}
+
+p {
+    font-family: var(--font_padrao);
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-image: linear-gradient(to top, var(--rosa1), var(--rosa2));
+    width: 100%;
+}
+
+header h1, header p {
+    text-align: center;
+}
+header p {
+    margin: 0px 2em;
+}
+
+nav {
+    background-color: var(--rosa1);
+    text-align: center;
+}
+
+nav a {
+    padding: 0px 1em;
+    margin: 0px 2em;
+    color: black;
+}
+
+nav a:hover {
+    background-color: var(--rosa2);
+    color: var(--rosa1);
+}
+
+body {
+    background-color: var(--rosa2);
+}
+
+main {
+    background-color: white;
+    min-width: 320px;
+    max-width: 1150px;
+    padding: 0px 1em;
+    margin: auto;
+}
+
+main h1 {
+    font-family: var(--fonte_tema);
+    margin-bottom: var(--marg_baixo);
+}
+
+main p {
+    font-size: medium;
+    margin-bottom: var(--marg_baixo);
+    
+}
+
+/* generico demais para todas as imagens */
+main img {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+main div.box_video {
+    position: relative;
+    /* cor de fundo */
+    background-color: var(--rosa2);
+    /* 'área do vídeo' */
+    margin: 0px -2em;
+    padding: 2em;
+    padding-bottom: 50%;
+}
+
+main iframe {
+    position: absolute;
+    /* tmanho do vídeo no box */
+    top: 5%;
+    left: 37.5%;
+    width: 25%;
+    height: 90%;
+}
+
+footer {
+    background-color: #2E19DB;
+    padding: 10px;
+}

@@ -41,6 +41,16 @@ a {
     text-decoration: none;
 }
 
+div.img {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+div#mae {
+    background-image: url('imagens/mae.png');
+}
+
 header {
     background-image: linear-gradient(to top, var(--rosa1), var(--rosa2));
     width: 100%;

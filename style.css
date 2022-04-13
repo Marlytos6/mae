@@ -112,6 +112,7 @@ nav {
       justify-content: space-around;
       transform: translateX(100%);
       transition: transform 0.3s ease-in;
+      z-index: 6000;
     }
     .nav-list li {
       margin-left: 0;
@@ -184,6 +185,23 @@ div.imag {
 div#mae {
     width: 280px;
     background-image: url(imagens/mae_completo.jpg);
+}
+
+article {
+    border-radius: 10px;
+    position: relative;
+}
+
+article#recepcao {
+    background-color: var(--cor2);
+}
+
+article#artigo {
+    background-color: var(--cor1);
+}
+
+article#artigo img {
+    padding-bottom: 1em;
 }
 
 article {

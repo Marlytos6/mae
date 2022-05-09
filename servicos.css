@@ -1,0 +1,13 @@
+div#servicos {
+    width: 100vw;
+    /* flex */
+    display: flex;
+}
+
+div.img_leg{
+    width: 217px;
+    padding: 0 1em;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+}

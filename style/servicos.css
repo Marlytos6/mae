@@ -1,0 +1,30 @@
+main * {
+    margin: auto;
+}
+
+div#servicos {
+    padding-top: 1em;
+    /* flex */
+    display: flex;
+    flex-direction: row;
+}
+
+div.img_leg{
+    /* flex */
+    display: flex;
+    flex-direction: column;
+}
+
+div.img_leg > img {
+    width: 15em;
+}
+
+div.img_leg p{
+    text-align: center;
+    text-indent: 0;
+}
+
+img#tabela{
+    margin-left: auto;
+    display: block;
+}

@@ -1,0 +1,238 @@
+@charset 'UTF-8';
+@font-face {
+    font-family: 'Elsie';
+    src: url(fonts/ElsieSwashCaps-Regular.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+:root {
+    --rosa1: #CA32DB;
+    --rosa2: #9532DB;
+    --cor_complementar: #EBCC22;
+    --cor1: #2E19DB;
+    --cor2: #18D2F0;
+    --font_padrao: Arial, Helvetica, sans-serif;
+    --fonte_tema: 'Elsie';
+    --fonte_destaque: 'Inspiration', cursive;
+    --marg_baixo: 0.5em
+}
+/* nav-bar */
+a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1em;
+    transition: 0.3s;
+}
+
+nav a{
+    font-family: var(--fonte_destaque);
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-family: var(--fonte_tema);
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: var(--rosa2);
+    height: 8vh;
+    position: relative;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10%;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: 0.3s;
+}
+  
+@media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: var(--rosa2);
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+      z-index: 6000;
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+}
+  
+.nav-list.active {
+    transform: translateX(0);
+}
+  
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+  
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+  
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+/* fontes */
+* {
+    font-family: var(--font_padrao);
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: var(--fonte_tema);
+}
+
+h2 {
+    font-family: var(--fonte_destaque);
+}
+
+p {
+    font-family: var(--font_padrao);
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 1.5em;
+}
+/* personalizaçao */
+body {
+    background-color: 
+    var(--rosa1);
+}
+
+main {
+    background-color: white;
+    min-width: 300px;
+    max-width: 900px;
+    padding-bottom: 0px;
+    margin: auto;
+}
+
+main h1 {
+    font-size: xx-large;
+    margin-bottom: var(--marg_baixo);
+}
+
+main p {
+    font-size: medium;
+    margin-bottom: var(--marg_baixo);
+    line-height: 2em;
+}
+div.imag {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+div#mae {
+    width: 280px;
+    background-image: url(imagens/mae_completo.jpg);
+    background-position: top;
+}
+
+article {
+    border-radius: 10px;
+    position: relative;
+}
+
+article#recepcao {
+    background-color: var(--cor2);
+}
+
+article#artigo {
+    background-color: var(--cor1);
+}
+
+article#artigo img {
+    padding-bottom: 1em;
+}
+
+article img {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+main div.box_video {
+    position: relative;
+    /* cor de fundo */
+    background-color: var(--rosa2);
+    /* area do vi­deo' */
+    margin: 0px -100vw;
+    padding: 2em;
+    padding-bottom: 50%;
+}
+
+main iframe#vd_canal1 {
+    position: absolute;
+    /* tamanho do vi­deo no box */
+    top: 5%;
+    left: 50%;
+    width: 7%;
+    height: 90%;
+    transform: translateX(-50%);
+}
+
+footer {
+    background-color: var(--cor1);
+    color: white;
+    text-align: center;
+    padding: 1em 0px;
+}

@@ -16,29 +16,7 @@
     --fonte_destaque: 'Inspiration', cursive;
     --marg_baixo: 0.5em
 }
-
-* {
-    font-family: var(--font_padrao);
-    text-align: justify;
-    margin: 0;
-    padding: 0;
-}
-
-h1 {
-    font-family: var(--fonte_tema);
-}
-
-h2 {
-    font-family: var(--fonte_destaque);
-}
-
-p {
-    font-family: var(--font_padrao);
-    text-align: justify;
-    text-indent: 1em;
-    line-height: 1.5em;
-}
-
+/* nav-bar */
 a {
     color: #fff;
     text-decoration: none;
@@ -149,7 +127,29 @@ nav {
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
+/* fontes */
+* {
+    font-family: var(--font_padrao);
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
 
+h1 {
+    font-family: var(--fonte_tema);
+}
+
+h2 {
+    font-family: var(--fonte_destaque);
+}
+
+p {
+    font-family: var(--font_padrao);
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 1.5em;
+}
+/* personalizaçao */
 body {
     background-color: 
     var(--rosa1);
@@ -173,7 +173,6 @@ main p {
     margin-bottom: var(--marg_baixo);
     line-height: 2em;
 }
-
 div.imag {
     width: 300px;
     height: 300px;
@@ -185,23 +184,7 @@ div.imag {
 div#mae {
     width: 280px;
     background-image: url(imagens/mae_completo.jpg);
-}
-
-article {
-    border-radius: 10px;
-    position: relative;
-}
-
-article#recepcao {
-    background-color: var(--cor2);
-}
-
-article#artigo {
-    background-color: var(--cor1);
-}
-
-article#artigo img {
-    padding-bottom: 1em;
+    background-position: top;
 }
 
 article {
@@ -231,7 +214,7 @@ main div.box_video {
     position: relative;
     /* cor de fundo */
     background-color: var(--rosa2);
-    /* 'Ã¡rea do vÃ­deo' */
+    /* area do vi­deo' */
     margin: 0px -100vw;
     padding: 2em;
     padding-bottom: 50%;
@@ -239,7 +222,7 @@ main div.box_video {
 
 main iframe#vd_canal1 {
     position: absolute;
-    /* tmanho do vÃ­deo no box */
+    /* tamanho do vi­deo no box */
     top: 5%;
     left: 50%;
     width: 7%;

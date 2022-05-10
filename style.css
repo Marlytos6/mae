@@ -136,10 +136,12 @@ nav {
 }
 
 h1 {
+    text-indent: 1.5em;
     font-family: var(--fonte_tema);
 }
 
 h2 {
+    text-indent: 1em;
     font-family: var(--fonte_destaque);
 }
 
@@ -148,15 +150,16 @@ p {
     text-align: justify;
     text-indent: 1em;
     line-height: 1.5em;
+    padding: 0 1em;
 }
 /* personalizaçao */
 body {
     background-color: 
     var(--rosa1);
+    overflow-x: hidden;
 }
 
 main {
-    background-color: white;
     min-width: 300px;
     max-width: 900px;
     padding-bottom: 0px;
@@ -232,7 +235,22 @@ main iframe#vd_canal1 {
 
 footer {
     background-color: var(--cor1);
+    padding: 1em 0px;
+}
+
+footer p {
     color: white;
     text-align: center;
-    padding: 1em 0px;
+}
+
+div#redes{
+    display: inline;
+}
+
+div.rede{
+    display: inline;
+}
+
+footer a {
+    padding-left: 0.25em;
 }

@@ -217,26 +217,26 @@ article img {
     margin-left: 25%;
     margin-right: 25%;
 }
-
+/* 
 main div.box_video {
-    position: relative;
+    position: relative; */
     /* cor de fundo */
-    background-color: var(--rosa2);
+    /* background-color: var(--rosa2); */
     /* area do vi­deo' */
-    margin: 0px -100vw;
+    /* margin: 0px -100vw;
     padding: 2em;
     padding-bottom: 50%;
-}
+} */
 
-main iframe#vd_canal1 {
-    position: absolute;
+/* main iframe#vd_canal1 {
+    position: absolute; */
     /* tamanho do vi­deo no box */
-    top: 5%;
+    /* top: 5%;
     left: 50%;
     width: 20%;
     height: 90%;
     transform: translateX(-50%);
-}
+} */
 
 footer {
     background-color: var(--cor1);

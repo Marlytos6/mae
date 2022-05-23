@@ -1,0 +1,20 @@
+p {
+    padding: 0 1ex;
+}
+
+#descricao {
+    padding: 0 1em;
+    margin-bottom: 1ex;
+    display: flex;
+    flex-direction: row;
+}
+
+#descricao div{
+    margin: 0;
+}
+
+#descricao p {
+    width: calc(100% - 300px);
+    height: 300px;
+    margin-right: 0;
+}

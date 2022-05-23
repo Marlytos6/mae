@@ -1,0 +1,52 @@
+:root {
+    --trans: rgba(255, 255, 255, 0.251);
+}
+
+main a {
+    color: black;
+}
+
+.telefone {
+    background-color: var(--trans);
+    padding: 1ex 0;
+    padding-left: 0.5em;
+    margin: 0 1em;
+}
+
+.telefone img {
+    height: 20px;
+}
+
+.endereco {
+    background-color: var(--trans);
+    padding: 1ex 0;
+    padding-bottom: 0.5pt;
+    margin: 0 1em;
+    margin-bottom: 1ex;
+}
+
+.endereco address {
+    padding-left: 1em;
+}
+
+.endereco > p {
+    background-color: transparent;
+    text-indent: 0;
+}
+
+.endereco a {
+    font-style: italic;
+}
+
+#redes_contatos{
+    background-color: var(--trans);
+    padding: 1ex 0;
+    margin: 0 1em;
+    margin-bottom: 1em;
+    list-style-position: inside;
+    list-style-type: '\1F310 ';
+}
+
+#redes_contatos li {
+    padding-left: 0.5em;
+}

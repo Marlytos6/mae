@@ -228,6 +228,7 @@ article img {
 div.video{
     display: flex;
     justify-content: center;
+    padding-bottom: 1em;;
 }
 
 footer {

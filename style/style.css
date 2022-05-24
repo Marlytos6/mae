@@ -36,8 +36,8 @@ a:hover {
 }
 
 .logo {
-    font-family: var(--fonte_tema);
-    font-size: 24px;
+    font-family: var(--fonte_destaque);
+    font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 4px;
 }
@@ -195,12 +195,13 @@ div.imag {
 
 div#mae {
     width: 280px;
-    background-image: url(../imagens/mae_completo.jpg);
-    background-position: top;
+    background-image: url(../imagens/mae_p.png);
+    background-position: top left;
 }
 
 article {
     position: relative;
+    margin-bottom: 1ex;
 }
 
 article#recepcao {

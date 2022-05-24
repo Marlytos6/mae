@@ -1,20 +1,27 @@
+/* para vw = 655px está bom */
+/* adaptar para a parelhos menores */
 p {
     padding: 0 1ex;
 }
 
 #descricao {
+    min-height: 26.5em;
     padding: 0 1em;
-    margin-bottom: 1ex;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 #descricao div{
+    height: 406px;
+    max-height: 406px;
     margin: 0;
 }
-
+/* o texto fica 'achatando' a medita que aumenta a janela */
 #descricao p {
-    width: calc(100% - 300px);
-    height: 300px;
-    margin-right: 0;
+    width: 50%;
+    /* max-width: ; */
+    max-height: 406px;
+    margin: 0;
+    box-sizing: border-box;
 }

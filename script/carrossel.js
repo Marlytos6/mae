@@ -1,0 +1,1 @@
+// programar transição do carrossel

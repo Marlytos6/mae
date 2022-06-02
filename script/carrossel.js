@@ -10,7 +10,7 @@ function carrossel() {
         id = 0
     }
 
-    imgs.style.transform = `translatex(${-id *500}px)`
+    imgs.style.transform = `translatex(${-id * 100}vw)`
 }
 
 setInterval(carrossel, 1800)

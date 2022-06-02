@@ -1,6 +1,6 @@
 .carrossel {
-    width: 500px;
-    height: 500px;
+    width: 100vw;
+    height: 12em;
     margin: auto;
     box-shadow: 2px 2px 4px black;
     overflow: hidden;
@@ -12,8 +12,12 @@
     display: flex;
 }
 
+.contanier a {
+    padding: 0;
+}
+
 #imgs img {
-    width: 500px;
-    height: 500px;
+    width: 100vw;
+    height: 12em;
     object-fit: cover;
 }

@@ -95,6 +95,7 @@ nav {
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         z-index: 6000;
+        visibility: hidden;
     }
 
     .nav-list li {
@@ -109,6 +110,7 @@ nav {
 
 .nav-list.active {
     transform: translateX(0);
+    visibility: visible;
 }
 
 @keyframes navLinkFade {
@@ -165,7 +167,6 @@ p {
 body {
     background-color:
         var(--cor2);
-    overflow-x: hidden;
 }
 
 main {

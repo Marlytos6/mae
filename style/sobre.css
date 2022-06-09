@@ -15,13 +15,34 @@ p {
 #descricao div{
     height: 406px;
     max-height: 406px;
-    margin: 0;
+    margin: auto 0;
+    margin-top: 0;
 }
 /* o texto fica 'achatando' a medita que aumenta a janela */
-#descricao p {
+#descricao article {
     width: 50%;
+    height: 406px;
     /* max-width: ; */
-    max-height: 406px;
-    margin: 0;
     box-sizing: border-box;
+}
+
+#descricao p {
+    margin: auto 0;
+    box-sizing: border-box;
+}
+
+#descricao #cabeça {
+    margin-bottom: 0.5em;
+}
+
+#descricao #pe {
+    padding-bottom: .5em;
+    margin-bottom: 0;
+}
+
+@media (max-width: 655px) {
+    #descricao p{
+        margin-left: 1ex;
+        height: 568px;
+    }
 }

@@ -1,11 +1,7 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base_home.html" %}
 
-{% block head %}
-    <link rel="shortcut icon" href="imagens/favicon/favicon.ico" type="image/x-icon">
-{% endblock %}
-{% block title %}Bem vindo!{% endblock  %}
+{% block 'titulo' %}Bem vindo!{% endblock %}
 
-{% block 'body' %}
+{% block 'home' %}
     <p>Teste de template base</p>
 {% endblock %}

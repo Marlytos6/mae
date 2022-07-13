@@ -1,0 +1,28 @@
+{% extends "base_home.html" %}
+
+{% load static %}
+
+{% block 'titulo' %}Contato{% endblock %}
+
+{% block 'home' %}
+    <main>
+        <h1>Para mais informações:</h1>
+        <p>Fale comigo pelo whatsapp:</p>
+        <div class="telefone">
+          <img src='{% static "home/imagens/favicon/whatsapp_ico.ico" %}' alt="icone de whatsapp">
+          <a href="https://web.whatsapp.com/send?phone=554399756142" target="_blank">Meu número</a>
+        </div>
+        <h1>Atualmente atendo no endereço:</h1>
+        <div class="endereco">
+            <address>Av. Martin Luther, 188 - Nações, Balneário Camboriú - SC, 88338-233</address>
+            <p>Para se localizar clique aqui &rarr;<a href="https://www.google.com/maps/place/Espa%C3%A7o+Carla+Carollo+Hair/@-26.9807279,-48.6427215,20.33z/data=!4m13!1m7!3m6!1s0x94d8ca0140148f75:0xd9852fa95dbd579e!2sAv.+Martin+Luther+-+Na%C3%A7%C3%B5es,+Balne%C3%A1rio+Cambori%C3%BA+-+SC!3b1!8m2!3d-26.9813398!4d-48.6426262!3m4!1s0x94d8cb471d43807b:0xad7ff72c56226d49!8m2!3d-26.9807631!4d-48.6425998?hl=pt-BR" target="_blank">Espaço Carla Carollo Hair</a></p>
+        </div>
+        <h1>Também me sigam:</h1>
+        <ul id="redes_contatos">
+            <li><a href="https://www.facebook.com/rosangelahirat" target="_blank">facebook</a></li>
+            <li><a href="https://www.instagram.com/vidaestetica_e_depilacao/" target="_blank">instagram</a></li>
+            <li><a href="https://www.youtube.com/channel/UCV-DJsbZpzOvH00SfGqjtpw" target="_blank">youtube</a></li>
+        </ul>
+    </main>
+    <link rel="stylesheet" href='{% static "home/style/contatos.css" %}'>
+{% endblock %}

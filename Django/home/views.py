@@ -6,3 +6,9 @@ def index(request):
 
 def servicos(request):
     return render(request, 'servico.html')
+
+def contatos(request):
+    return render(request, 'contatos.html')
+
+def sobre(request):
+    return render(request, 'sobre.html')

@@ -2,8 +2,11 @@
 
 {% load static %}
 
-{% block 'titulo' %}Autenticação{% endblock  %}
-
-{% block 'body' %}
-  
+{% block 'head' %}
+    <nav style="background-color: #27DB8F;" class="navbar navbar-expand-lg navbar-dark">
+        <a style="font-weight: bold" class="navbar-brand" href="{% url 'home' %}">Rho Esteticista</a>
+    </nav>
+    {% block 'head_auth' %}{% endblock %}
+    <link rel="stylesheet" href="{% static 'autenticacao/style/css.css' %}">
 {% endblock %}
+{% block 'titulo' %}Autenticação{% endblock  %}

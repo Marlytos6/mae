@@ -1,0 +1,139 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Elsie';
+    src: url(fonts/ElsieSwashCaps-Regular.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+:root {
+    --rosa1: #CA32DB;
+    --rosa2: #9532DB;
+    --cor_complementar: #EBCC22;
+    --cor1: #2E19DB;
+    --cor2: #18D2F0;
+    --font_padrao: Arial, Helvetica, sans-serif;
+    --fonte_tema: 'Elsie';
+    --fonte_destaque: 'Inspiration', cursive;
+    --marg_baixo: 0.5em
+}
+
+
+/* fontes */
+* {
+    font-family: var(--font_padrao);
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-indent: 1.5em;
+    font-family: var(--fonte_tema);
+}
+
+h2 {
+    text-indent: 1em;
+    font-family: var(--fonte_destaque);
+}
+
+p {
+    font-family: var(--font_padrao);
+    text-align: justify;
+    text-indent: 1em;
+    line-height: 1.5em;
+    margin: 0 1em;
+}
+/* personalizaçao */
+body {
+    overflow-x: hidden;
+}
+
+main {
+    padding-bottom: 0px;
+    margin: auto;
+}
+
+main h1 {
+    font-size: xx-large;
+    margin-bottom: var(--marg_baixo);
+}
+
+main p {
+    font-size: medium;
+    line-height: 2em;
+    margin-bottom: var(--marg_baixo);
+    background-color: rgba(255, 255, 255, 0.251);
+}
+
+div.imag {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    margin: auto;
+    background-repeat: no-repeat;
+}
+
+div#mae {
+    width: 280px;
+    background-image: url(../imagens/mae_p.jpg);
+    background-position: top left;
+}
+
+article {
+    position: relative;
+    margin-bottom: 1ex;
+}
+
+article#recepcao {
+    background-color: var(--cor2);
+}
+
+article#recepcao p {
+    padding: 0 1ex;
+}
+
+article#artigo {
+    background-color: var(--cor1);
+}
+
+article#artigo img {
+    padding-bottom: 1em;
+}
+
+article img {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+div.video{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;;
+}
+
+footer {
+    background-color: var(--cor1);
+    padding: 1em 0px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+div#redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.rede {
+    display: inline;
+}
+
+footer a {
+    padding-left: 0.25em;
+}

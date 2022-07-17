@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block 'head' %}
+    <link rel="stylesheet" href='{% static "home/style/style.css" %}'>
+    <link rel="shortcut icon" href='{% static "home/imagens/favicon/favicon.ico" %}' type="image/x-icon">
+{% endblock %}
+{% block 'body' %}
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="{% url 'home' %}" class="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="{% url 'servicos' %}" class="nav-link px-2 text-white">Serviços</a></li>
+              <li><a href="{% url 'contatos' %}" class="nav-link px-2 text-white">Contatos</a></li>
+              <li><a href="{% url 'sobre' %}" class="nav-link px-2 text-white">Sobre</a></li>
+            </ul>
+              <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2"><a href="{% url 'login' %}">Login</a></button>
+                <button type="button" class="btn btn-warning"><a href="{% url 'cadastro' %}">Cadrastar-me</a></button>
+              </div>
+          </div>
+        </div>
+    </header>
+    <div class="container">
+      <div id="carrossel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src='{% static "home/imagens/primavera.jpg" %}' class="d-block w-100" alt="primavera">
+            </div>
+            <div class="carousel-item">
+              <img src='{% static "home/imagens/verao.jpg" %}' class="d-block w-100" alt="verao">
+            </div>
+            <div class="carousel-item">
+              <img src='{% static "home/imagens/outono.jpg" %}' class="d-block w-100" alt="outono">
+            </div>
+            <div class="carousel-item">
+              <img src='{% static "home/imagens/inverno.jpg" %}' class="d-block w-100" alt="inverno">
+            </div>
+          </div>
+          <style>
+            ol.carousel-indicators li{
+              background-color: black;
+            }
+          </style>
+          <!-- classList.toggle(this.activeClass) -->
+          <ol class="carousel-indicators">
+              <li data-target="#carrossel" data-slide-to="0" class="active"></li>
+              <li data-target="#carrossel" data-slide-to="1"></li>
+              <li data-target="#carrossel" data-slide-to="2"></li>
+              <li data-target="#carrossel" data-slide-to="3"></li>
+          </ol>
+          <button class="carousel-control-prev" type="button" data-target="#carrossel" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carrossel" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+      </div>
+    </div>
+    {% block 'home' %}{% endblock %}
+    <footer>
+      <div id="redes">
+        <div class="rede">
+          <img src='{% static "home/imagens/icone-facebook.png" %}' alt="facebook">
+          <a href="https://www.facebook.com/rosangelahirat" target="_blank">facebook</a>
+        </div>
+        <div class="rede">
+          <img src='{% static "home/imagens/icone-instagram.png" %}' alt="instagram">
+          <a href="https://www.instagram.com/vidaestetica_e_depilacao/" target="_blank">instagram</a>
+        </div>
+        <div class="rede">
+          <img src='{% static "home/imagens/icone-youtube.png" %}' alt="youtube">
+          <a href="https://www.youtube.com/channel/UCV-DJsbZpzOvH00SfGqjtpw" target="_blank">youtube</a>
+        </div>
+      </div>
+      <p>Todos os direitos reservados a Rosãngela Hirata</p>
+    </footer>
+{% endblock %}

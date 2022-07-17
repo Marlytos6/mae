@@ -1,0 +1,25 @@
+{% extends "base_home.html" %}
+
+{% load static %}
+
+{% block 'titulo' %}Bem vindo!{% endblock %}
+
+{% block 'home' %}
+    <main>
+        <article id="recepcao">
+            <h1>Seja bem vindo ao meu site</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa neque provident quaerat assumenda aperiam
+                tenetur velit dolorem a, ab autem officiis possimus, minima omnis laborum! Accusamus voluptates incidunt
+                quibusdam quam!</p>
+            <div class="imag" id="mae"></div>
+        </article>
+        <article id="artigo">
+            <h1>Vida, estética e saúde</h1>
+            <p>Fazemos massagem, depilação, limpeza de pele e o que precisar, para seu comforto e relaxamento</p>
+        </article>
+        <div class="video">
+            <video src='{% static "home/videos/dermo.mp4" %}'
+        controls width="280"></video>
+        </div>
+    </main>
+{% endblock %}

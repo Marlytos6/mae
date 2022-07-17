@@ -20,13 +20,9 @@
               <li><a href="{% url 'contatos' %}" class="nav-link px-2 text-white">Contatos</a></li>
               <li><a href="{% url 'sobre' %}" class="nav-link px-2 text-white">Sobre</a></li>
             </ul>
-    
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-              <input type="search" class="form-control form-control-dark text-white bg-dark" placeholder="Search..." aria-label="Search">
-            </form>
               <div class="text-end">
                 <button type="button" class="btn btn-outline-light me-2"><a href="{% url 'login' %}">Login</a></button>
-                <button type="button" class="btn btn-warning"><a href="#">Cadrastar-me</a></button>
+                <button type="button" class="btn btn-warning"><a href="{% url 'cadastro' %}">Cadrastar-me</a></button>
               </div>
           </div>
         </div>
